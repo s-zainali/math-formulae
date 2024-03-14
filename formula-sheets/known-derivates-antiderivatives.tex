@@ -1,0 +1,80 @@
+\documentclass{article}
+\usepackage[letterpaper, margin=0.2in]{geometry}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{xcolor,colortbl}
+\usepackage{bigints}
+\usepackage{amsmath}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\arccsc}{arccsc}
+\newcommand{\dee}{\mathop{\mathrm{d}\!}}
+\large
+\begin{document}
+\begin{multicols*}{2}
+    \section{Known Derivatives}
+        \begin{enumerate}
+            \item $\dfrac{\dee}{\dee x} k= 0$
+            \item $\dfrac{\dee}{\dee x} x= 1$
+            \item $\dfrac{\dee}{\dee x} x^2 = 2x$
+            \item $\dfrac{\dee}{\dee x} x^3 = 3x^2$
+            \item $\dfrac{\dee}{\dee x} x^n = nx^{n-1}$
+            \item $\dfrac{\dee}{\dee x} e^x = e^x$
+            \item $\dfrac{\dee}{\dee x} e^{kx} = ke^{kx}$
+            \item $\dfrac{\dee}{\dee x} \ln(x) = \dfrac{\dee}{\dee x} \log_e(x) = \dfrac{1}{x}$
+            \item $\dfrac{\dee}{\dee x} \sin x = \cos x$
+            \item $\dfrac{\dee}{\dee x} \cos x = -\sin x$
+            \item $\dfrac{\dee}{\dee x} \cos k x = -k \sin kx$
+            \item $\dfrac{\dee}{\dee x} \tan x = \dfrac{\dee}{\dee x} \dfrac{\sin x}{\cos x} =\sec^2 x $
+            \item $\dfrac{\dee}{\dee x} \tan kx = k\sec^2kx$
+            \item $\dfrac{\dee}{\dee x} \csc x = \dfrac{\dee}{\dee x} \dfrac{1}{\sin x} = - \csc x \cot x$
+            \item $\dfrac{\dee}{\dee x} \sec x = \dfrac{\dee}{\dee x} = \sec x \tan x$
+            \item $\dfrac{\dee}{\dee x} \cot x = \dfrac{\cos x}{\sin x} = - \csc^2 x$
+            \item $\dfrac{\dee}{\dee x} \arcsin x = \dfrac{1}{\sqrt{1-x^2}}$
+            \item $\dfrac{\dee}{\dee x} \arccos x = -\dfrac{1}{\sqrt{1-x^2}}$
+            \item $\dfrac{\dee}{\dee x} \arctan x = \dfrac{1}{1+x^2}$
+            \item $\dfrac{\dee}{\dee x} \arcsec x = \dfrac{1}{|x|\sqrt{x^2-1}}$
+            \item $\dfrac{\dee}{\dee x} \arccsc x = \dfrac{-1}{|x|\sqrt{x^2-1}}$
+            \item $\dfrac{\dee}{\dee x} \arccot x = \dfrac{-1}{1+x^2}$
+        \end{enumerate}
+    \newcolumn
+    \section{Known Integrals}
+    \begin{enumerate}
+        \item $\displaystyle \int [af(x)+bg(x)] \dee x = a\int f(x)\ \dee{x}+b\int g(x)\ \dee{x}\ +\ C$
+        \item $\displaystyle \int [f(x)+g(x)] \dee x = \int f(x)\ \dee{x}+\int g(x)\ \dee{x}\ +\ C$
+        \item $\displaystyle \int [f(x)-g(x)] \dee x = \int f(x)\ \dee{x}-\int g(x)\ \dee{x}\ +\ C$
+        \item $\displaystyle \int af(x) \dee x = a\int f(x)\ \dee{x}\ +\ C$
+        \item $\displaystyle \int u(x)v'(x) \dee x = u(x)v(x)-\int u'(x)v(x)\ \dee{x}\ +\ C$
+        \item $\displaystyle \int f\big(y(x)\big)y'(x) \dee x = F\big(y(x)\big)\\\hbox{ where }F(y)=\int f(y)\ \dee{y}$
+        \item $\displaystyle \int a \dee x = ax\ +\ C$
+        \item $\displaystyle \int x^a \dee x = \frac{x^{a+1}}{a+1}+C\hbox{ if }a\ne-1$
+        \item $\displaystyle \int \dfrac{1}{x} \dee x = \ln|x|+C$
+        \item $\displaystyle \int [g(x)^ag'(x)] \dee x= \frac{g(x)^{a+1}}{a+1}+C\hbox{ if }a\ne -1$
+        \item $\displaystyle \int \sin x \dee x = -\cos x + C$
+        \item $\displaystyle \int \cos x \dee x = \sin x + C$
+        \item $\displaystyle \int \tan x \dee x = \ln|\sec x| + C$
+        \item $\displaystyle \int g'(x)\sin g(x) x \dee x = -\cos g(x)+C$
+        \item $\displaystyle \int \csc x \dee x = \ln |\csc x-\cot x|+C$
+        \item $\displaystyle \int \sec x \dee x = \ln |\sec x+\tan x|+C$
+        \item $\displaystyle \int \cot x \dee x = \ln|\sin x|+C$
+        \item $\displaystyle \int \sec^2 x \dee x = \tan x+C$
+        \item $\displaystyle \int \csc^2 x \dee x = -\cot x+C$
+        \item $\displaystyle \int \sec x\tan x \dee x = \sec x+C$
+        \item $\displaystyle \int \csc x\cot x \dee x = -\csc x+C$
+        \item $\displaystyle \int e^x \dee x = e^x+C$
+        \item $\displaystyle \int e^{g(x)}g'(x) \dee x = e^{g(x)}+C$
+        \item $\displaystyle \int e^{ax} x \dee = \frac{1}{a}\ e^{ax}+C$
+        \item $\displaystyle \int a^x \dee x = \frac{1}{\ln a}\ a^x+C$
+        \item $\displaystyle \int \ln x \dee x = x\ln x -x+C$
+        \item $\displaystyle \int \frac{1}{\sqrt{1-x^2}} \dee x = \arcsin x+C$
+        \item $\displaystyle \int \frac{g'(x)}{\sqrt{1-g(x)^2}} \dee x = \arcsin g(x)+C$
+        \item $\displaystyle \int \frac{1}{\sqrt{a^2-x^2}} \dee x = \arcsin \frac{x}{a}+C$
+        \item $\displaystyle \int \frac{1}{1+x^2} \dee x = \arctan x+C$
+        \item $\displaystyle \int \frac{g'(x)}{1+g(x)^2} \dee x = \arctan g(x)+C$
+        \item $\displaystyle \int \frac{1}{a^2+x^2} \dee x = \frac{1}{a}\arctan \frac{x}{a}+C$
+        \item $\displaystyle \int \frac{1}{x\sqrt{x^2-1}} \dee x = \arcsec x+C\hbox{ for }x > 1$
+    \end{enumerate}
+\end{multicols*}
+\end{document}

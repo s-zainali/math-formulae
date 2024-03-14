@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage[letterpaper, margin=0.2in]{geometry}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{xcolor,colortbl}
+\usepackage{bigints}
+\usepackage{amsmath}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\arccsc}{arccsc}
+\newcommand{\dee}{\mathop{\mathrm{d}\!}}
+
+\begin{document}
+\Large
+    \section{Derivative rules}
+    \begin{multicols}{2}
+        \subsection{Constant Rule}
+        $\dfrac{\dee}{\dee x} c = 0$
+        \subsection{Constant Multiple Rule}
+        $\dfrac{\dee}{\dee x} [cf(x)] = c f'(x)$
+        \subsection{Power Rule}
+        $\dfrac{\dee}{\dee x} \left(x^n\right) = nx^{n-1}$
+        \subsection{Sum Rule}
+        $\dfrac{\dee}{\dee x} [f(x) + g(x)] = f'(x) + g'(x)$
+        \subsection{Difference Rule}
+        $\dfrac{\dee}{\dee x} [f(x) - g(x)] = f'(x) - g'(x)$
+        \subsection{Product Rule}
+        $\dfrac{\dee}{\dee x} [f(x)g(x)] = f(x)g'(x) + g(x)f'(x)$ 
+        \subsection{Quotient Rule}
+        $\dfrac{\dee}{\dee x} \left[\dfrac{f(x)}{g(x)}\right] = \dfrac{g(x)f'(x)-f(x)g'(x)}{g(x)^2}$ 
+        \subsection{Chain Rule}
+        $\dfrac{\dee}{\dee x} f(g(x)) = f'(g(x))g'(x)$ 
+    \end{multicols}
+
+    \section{Integration Rules}
+        
+\end{document}

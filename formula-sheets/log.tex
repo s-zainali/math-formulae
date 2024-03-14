@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage[letterpaper, margin=0.05in]{geometry}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{xcolor,colortbl}
+
+
+\begin{document}
+\large
+\section{Definition}
+$a^x = b \Leftrightarrow \log_ab = x$
+
+\section{Zero Rule}
+\begin{multicols}{2}
+    $\log(1) = 0$\\ $\ln(1) = 0$
+\end{multicols}
+
+\section{log of the same number as base}
+\begin{multicols}{2}
+    $\log_a(a) = 1$ \\ $\ln(e) = 1$
+\end{multicols}
+
+\section{Product Rule}
+\begin{multicols}{2}
+    $\log_a(xy) = \log_a(x) + \log_a(y)$ \\ $\ln(xy) = \ln(x) + \ln(y)$
+\end{multicols}
+
+\section{Quotient Rule}
+\begin{multicols}{2}
+    $\log_a\left(\dfrac{x}{y}\right) = \log_a(x) - \log_a(y)$ \\ $\ln\left(\dfrac{x}{y}\right) = \ln(x) + \ln(y)$
+\end{multicols}
+
+\section{Power Rule}
+\begin{multicols}{2}
+    $\log_a(x^y) = y\log_a(x)$ \\ $\ln(x^y) = y\ln(x)$
+\end{multicols}
+
+\section{Change of base Rule}
+\begin{multicols}{2}
+    $\log_a(x) = \dfrac{\log_b(x)}{\log_b(y)}$ \\ $\log_a(x) \cdot \log_b(y) = \log_c(y)$
+\end{multicols}
+
+\section{Equality Rule}
+\begin{multicols}{2}
+    $\log_a(x) = \log_a(y) \Rightarrow x=y$ \\ $\ln(x) = \ln(y) \Rightarrow x = y$
+\end{multicols}
+
+\section{Number Raised to Log}
+\begin{multicols}{2}
+    $b^{\log_bx} = x$ \\ $e^{\ln x} = x$
+\end{multicols}
+
+\section{Others}
+\begin{multicols}{2}
+    $-\log_ax=\log_a \left(\dfrac{1}{x}\right)$
+\end{multicols}
+
+\end{document}
